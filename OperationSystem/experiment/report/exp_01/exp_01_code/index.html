@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>os lab 01</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="add-table-box">
+            <div class="title">添加进程</div>
+            <div class="form-contain">
+                <input type="text" placeholder="进程名" v-model="form.name">
+                <input type="number" placeholder="优先级" v-model="form.priority">
+                <input type="number" placeholder="运行时长" v-model="form.time">
+                <div class="button-area clearfix">
+                    <button @click="add">添加</button>
+                    <button @click="defaultValue">默认</button>
+                </div>
+            </div>
+        </div>
+        <div class="show-table-box">
+            <div class="title">运行演示</div>
+            <div class="introduce-state-box clearfix">
+                <div class="state-box">
+                    <div class="wait">wait (W)</div>
+                    <div class="run">run (R)</div>
+                    <div class="finish">finish (F)</div>
+                </div>
+            </div>
+            <div class="table-contain">
+                <table>
+                    <tr>
+                        <th>编号</th>
+                        <th>进程名</th>
+                        <th>优先级</th>
+                        <th>运行时长</th>
+                        <th>CPU时长</th>
+                        <th>状态</th>
+                    </tr>
+                    <tr v-for="process in process_list">
+                        <td>{{ process.id }}</td>
+                        <td>{{ process.name }}</td>
+                        <td>{{ process.priority }}</td>
+                        <td>{{ process.time }}</td>
+                        <td>{{ process.cpu }}</td>
+                        <td :class="process.type">{{ process.state }}</td>
+                    </tr>
+                    <tr v-for="process in finish_list">
+                        <td>{{ process.id }}</td>
+                        <td>{{ process.name }}</td>
+                        <td>{{ process.priority }}</td>
+                        <td>{{ process.time }}</td>
+                        <td>{{ process.cpu }}</td>
+                        <td :class="process.type">{{ process.state }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="button-area clearfix">
+                <button @click="clear">清空</button>
+                <button @click="next">下一步</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

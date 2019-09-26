@@ -1,0 +1,200 @@
+html,
+body,
+div,
+table,
+tr,
+td,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#main {
+    width: 1000px;
+    margin: 50px auto 0 auto;
+}
+
+.add-table-box,
+.show-table-box {
+    width: 100%;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px #fff solid;
+    border-radius: 10px;
+}
+
+.show-table-box {
+    margin-top: 20px;
+}
+
+.add-table-box .title,
+.show-table-box .title {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin: 0 auto 20px auto;
+}
+
+.add-table-box .form-contain {
+    width: 910px;
+    margin: 0 auto;
+}
+
+.add-table-box .form-contain input[type="text"],
+.add-table-box .form-contain input[type="number"] {
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px #aaa solid;
+    color: #888;
+    padding-left: 5px;
+}
+
+.add-table-box .form-contain input[type="text"]:focus,
+.add-table-box .form-contain input[type="number"]:focus {
+    border-bottom: 1px #555 solid;
+}
+
+.add-table-box .form-contain .button-area,
+.show-table-box .button-area {
+    width: 400px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+}
+
+.add-table-box .form-contain .button-area button,
+.show-table-box .button-area button {
+    width: 120px;
+    height: 30px;
+    background-color: #888;
+    border: 1px #888 solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-table-box .form-contain .button-area button:hover,
+.show-table-box .button-area button:hover {
+    background-color: #555;
+    border: 1px #555 solid;
+}
+
+.add-table-box .form-contain .button-area button:active,
+.show-table-box .button-area button:active {
+    background-color: #333;
+    border: 1px #333 solid;
+}
+
+.add-table-box .form-contain .button-area button:nth-child(1),
+.show-table-box .button-area button:nth-child(1) {
+    float: left;
+}
+
+.add-table-box .form-contain .button-area button:nth-child(2),
+.show-table-box .button-area button:nth-child(2) {
+    float: right;
+}
+
+.show-table-box .introduce-state-box {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.show-table-box .introduce-state-box .state-box {
+    float: right;
+}
+
+.show-table-box .introduce-state-box .state-box div {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.show-table-box .introduce-state-box .state-box .wait {
+    color: #FF6600;
+}
+
+.show-table-box .introduce-state-box .state-box .run {
+    color: red;
+}
+
+.show-table-box .introduce-state-box .state-box .finish {
+    color: green;
+}
+
+.show-table-box .table-contain {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.show-table-box .table-contain table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.show-table-box .table-contain table th,
+.show-table-box .table-contain table td {
+    border: 1px solid #555;
+    padding: 3px 7px 2px 7px;
+}
+
+.show-table-box .table-contain table th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #aaa;
+    color: #ffffff;
+}
+
+.show-table-box .table-contain table td {
+    font-size: 1em;
+}
+
+.show-table-box .table-contain table tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+.show-table-box .table-contain .wait {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF6600;
+}
+
+.show-table-box .table-contain .run {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+.show-table-box .table-contain .finish {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
