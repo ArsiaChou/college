@@ -1,15 +1,17 @@
-package bean;
+package cha02_pk01;
 
 public class BeanT {
     private String name;
     private String value;
 
+    public BeanT(String name, String value) {
+        this.name = name;
+        this.value = value;
+    }
+
     public BeanT() {
         name = "";
         value = "";
-    }
-    public String toString() {
-        return "Bean T";
     }
 
     public BeanT createNotStatic() {
@@ -34,5 +36,13 @@ public class BeanT {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "BeanT{" +
+                "name='" + name + '\'' +
+                ", value='" + value + '\'' +
+                '}';
     }
 }
