@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+html, body, div, table, ul, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, Android, "Microsoft Himalaya", "Microsoft Sans Serif";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.contains {
+    width: 1240px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* nav */
+.main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    height: 50px;
+    background-color: #efefef;
+    overflow: hidden;
+    user-select: none;
+}
+
+.nav-bar .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+}
+
+.nav-bar .options {
+    font-size: 1.2em;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.nav-bar .options ul{
+    float: right;
+}
+
+.nav-bar .options ul li {
+    float: left;
+    margin: 0 5px;
+}
+
+.nav-bar .options ul li a {
+    padding: 5px;
+    display: block;
+    color: #333333;
+}
+
+.nav-bar .options ul li a:hover,
+.nav-bar .options ul li .active {
+    color: #efefef;
+    background-color: #333;
+}
+
+.nav-bar .options,
+.nav-bar .options ul,
+.nav-bar .options ul li,
+.nav-bar .options ul li a {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* main */
+.main-thing {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.main-thing .top-bar {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.main-thing .top-bar .title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.main-thing .top-bar .flush {
+    height: 22px;
+    background-color: #ddd;
+    color: #555;
+    border: 1px #efefef solid;
+}
+
+.main-thing .top-bar .flush:hover {
+    color: #333;
+}
+
+.main-thing .top-bar .flush:active {
+    background-color: #aaa;
+}
+
+.main-thing .order-master-table-box {
+    min-height: 268px;
+    clear: both;
+    padding: 5px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.main-thing .order-master-table-box table {
+    width: 100%;
+    text-align: center;
+}
+
+.main-thing .order-master-table-box table thead tr th{
+    background-color: #dedede;
+    color: #333;
+    padding: 3px 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.main-thing .order-master-table-box table tbody tr td{
+    background-color: #fff;
+    color: #888;
+    padding: 3px 5px;
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.main-thing .operation-buttons {
+    width: 100%;
+}
+
+.main-thing .operation-buttons .button {
+    width: 140px;
+    height: 30px;
+    background-color: #efefef;
+    color: #888;
+    border: 1px #efefef solid;
+    border-radius: 5px;
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.main-thing .operation-buttons .button:hover {
+    color: #555;
+}
+
+.main-thing .operation-buttons .button:active {
+    background-color: #ddd;
+    color: #555;
+}
+
+.main-thing .operation-buttons .last {
+    margin-left: 200px;
+}
+
+.main-thing .operation-buttons .next {
+    margin-right: 200px;
+}
+
+/* report */
+.report {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.report .title {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.report .report-table-box {
+    min-height: 268px;
+    clear: both;
+    padding: 5px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+}
+
+
+.report .report-table-box table {
+    width: 100%;
+    text-align: center;
+}
+
+.report .report-table-box table thead tr th{
+    background-color: #dedede;
+    color: #333;
+    padding: 3px 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.report .report-table-box table tbody tr td{
+    background-color: #fff;
+    color: #888;
+    padding: 3px 5px;
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.report .operation-buttons {
+    width: 100%;
+}
+
+.report .operation-buttons .button {
+    width: 140px;
+    height: 30px;
+    background-color: #efefef;
+    color: #888;
+    border: 1px #efefef solid;
+    border-radius: 5px;
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.report .operation-buttons .button:hover {
+    color: #555;
+}
+
+.report .operation-buttons .button:active {
+    background-color: #ddd;
+    color: #555;
+}
+
+.report .operation-buttons .no-sort {
+    margin-left: 200px;
+}
+
+.report .operation-buttons .sort {
+    margin-right: 200px;
+}

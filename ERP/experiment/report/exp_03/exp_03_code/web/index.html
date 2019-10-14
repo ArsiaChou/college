@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <script src="style/js/index.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="contains nav-bar">
+        <div class="logo fl">OrderMaster</div>
+        <div class="options fr">
+            <ul>
+                <li><a href="#main">主要</a></li>
+                <li><a href="#report">报表</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div id="main" class="contains main-thing">
+        <div class="top-bar">
+            <div class="title fl">所有信息</div>
+            <button class="flush fr">刷新</button>
+        </div>
+        <div class="order-master-table-box">
+            <input type="hidden" class="list-length" value="0">
+            <table>
+                <thead>
+                <tr>
+                    <th>orderNo</th>
+                    <th>customerNo</th>
+                    <th>saleNo</th>
+                    <th>orderSum</th>
+                    <th>orderData</th>
+                    <th>shipDate</th>
+                    <th>invoiceNo</th>
+                </tr>
+                </thead>
+                <tbody class="order-master-data">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="operation-buttons">
+            <button class="button last fl">上一页</button>
+            <button class="button next fr">下一页</button>
+        </div>
+    </div>
+
+    <!-- report -->
+    <div id="report" class="contains report">
+        <div class="title">报表</div>
+        <div class="report-table-box">
+
+        </div>
+        <div class="operation-buttons">
+            <button class="button no-sort fl">价格阶段</button>
+            <button class="button sort fr">排名</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca199e52-2a72-43f6-b43d-0b2f05ad5134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../experiment/exp_01/.~6052017001-周靖赟-实验1.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../experiment/exp_01/116052017001-周靖赟-实验1.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cha03_pk01/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cha03_pk01/aspect/JdkProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cha03_pk01/aspect/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cha03_pk01/user/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cha03_pk01/user/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../other" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cha01_pk01_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cha01_pk01_config.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spring-websocket-5.1.9.RELEASE.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ERP/experiment/report/exp_03/exp_03_code" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,13 +63,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnnotationAssembleTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="AnnotationAssembleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cha02_pk02.AnnotationAssembleTest" />
       <module name="chapter01" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cha02_pk02.beans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cha03_pk01.Test" />
+      <module name="chapter01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cha03_pk01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.AnnotationAssembleTest" />
         <item itemvalue="Application.TestIoc" />
         <item itemvalue="Application.TestBeanT" />
@@ -123,6 +144,9 @@
       <workItem from="1568946567997" duration="5416000" />
       <workItem from="1569550981981" duration="5182000" />
       <workItem from="1569566519049" duration="93000" />
+      <workItem from="1570760447347" duration="2000000" />
+      <workItem from="1570774017520" duration="1476000" />
+      <workItem from="1570870268649" duration="34000" />
     </task>
     <servers />
   </component>
